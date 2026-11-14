@@ -26,6 +26,13 @@ done
 STAMP="$(date +%Y%m%d-%H%M%S)"
 BACKUP="$APP_HOME/backups/herdr-config-$STAMP"
 
+# Keep the backup folder from growing a full copy per run: only the last three.
+if [ "$DRY" -eq 0 ] && [ -d "$APP_HOME/backups" ]; then
+  ls -1dt "$APP_HOME"/backups/herdr-config-* 2>/dev/null | tail -n +3 | while read -r old; do
+    rm -rf "$old"
+  done
+fi
+
 say() { printf '%s\n' "$*"; }
 run() { [ "$DRY" -eq 1 ] && say "would: $*" || "$@"; }
 
