@@ -1,0 +1,22 @@
+# nothing the app or installers write is tracked by default
+*
+!.gitignore
+!.gitattributes
+!README.md
+!mods.list.json
+!settings.json
+!keys.json
+!scripts/
+!scripts/**
+!layouts/
+!layouts/*.json
+!mods/
+!mods/**
+!overrides/
+!overrides/**
+
+# app-written files that can appear inside vendored mods
+mods/*/gpui-kit.d.ts
+mods/*/**/gpui-kit.d.ts
+mods/*/jsconfig.json
+mods/*/**/jsconfig.json

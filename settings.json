@@ -1,0 +1,10 @@
+{
+  "sounds": {
+    "enabled": true
+  },
+  "font": "Hack Nerd Font Mono",
+  "font_size": 12.0,
+  "font_ligatures": false,
+  "minimum_contrast": 1.0,
+  "appearance": "dark"
+}
