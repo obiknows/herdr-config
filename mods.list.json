@@ -5,46 +5,65 @@
     {
       "name": "better-sidebar",
       "version": "3.3.0",
-      "source": "unknown",
+      "source": "github.com/munza/herdr-mods",
+      "path": "better-sidebar/mods/better-sidebar",
+      "ref": null,
+      "upstream_version": "3.3.0",
       "vendored": true
     },
     {
       "name": "better-tabs",
       "version": "3.0.0",
-      "source": "unknown",
+      "source": "github.com/munza/herdr-mods",
+      "path": "better-tabs/mods/better-tabs",
+      "ref": null,
+      "upstream_version": "3.0.0",
       "vendored": true
     },
     {
       "name": "better-changes",
       "version": "2.4.0",
-      "source": "unknown",
+      "source": "github.com/munza/herdr-mods",
+      "path": "better-changes/mods/better-changes",
+      "ref": null,
+      "upstream_version": "2.5.0",
+      "vendor_note": "one release behind; the vendored tree came from the earlier install, not a pinned commit",
       "vendored": true
     },
     {
       "name": "better-files",
       "version": "1.4.0",
-      "source": "unknown",
+      "source": "github.com/munza/herdr-mods",
+      "path": "better-files/mods/better-files",
+      "ref": null,
+      "upstream_version": "1.5.1",
+      "vendor_note": "behind upstream; the vendored tree came from the earlier install, not a pinned commit",
       "vendored": true
     },
     {
       "name": "branch-pr",
       "version": "2.3.0",
-      "source": "unknown",
+      "source": "github.com/munza/herdr-mods",
+      "path": "branch-pr/mods/branch-pr",
+      "ref": null,
+      "upstream_version": "2.3.0",
       "vendored": true
     },
     {
       "name": "ci-dash",
       "version": null,
-      "source": "github.com/cybertron288/herdr-mods@34e7c3348e954fd0a1147b846898db8c3e37e526",
+      "source": "github.com/cybertron288/herdr-mods",
       "path": "ci-dash/mods/ci-dash",
+      "ref": "34e7c3348e954fd0a1147b846898db8c3e37e526",
       "vendored": true,
       "patched": false
     },
     {
       "name": "session-bar",
       "version": null,
-      "source": "github.com/cybertron288/herdr-mods@34e7c3348e954fd0a1147b846898db8c3e37e526",
+      "source": "github.com/cybertron288/herdr-mods",
       "path": "session-bar/mods/session-bar",
+      "ref": "34e7c3348e954fd0a1147b846898db8c3e37e526",
       "vendored": true,
       "patched": true,
       "patch": "overrides/session-bar/main.js",

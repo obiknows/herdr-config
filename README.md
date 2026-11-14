@@ -25,19 +25,23 @@ work
 
 ## Mods
 
-Vendored under `mods/`, not fetched by ref: five of the seven have no
-discoverable upstream, so a `{source, ref}` pin would be fiction.
-`mods.list.json` records what is known.
+Vendored under `mods/`, not fetched by ref: they came from earlier manual
+installs, so no exact commit is recorded. `mods.list.json` names each
+upstream and the version that upstream ships today.
 
-| mod | what it does |
-|---|---|
-| `better-sidebar` | sidebar lists + footer + panel toggle |
-| `better-tabs` | tab bar with the Files/Changes/PRs/CI buttons |
-| `better-changes` | changes panel and the pane header |
-| `better-files` | files panel |
-| `branch-pr` | pull-request panel |
-| `ci-dash` | GitHub Actions panel (`cybertron288/herdr-mods`) |
-| `session-bar` | 28px git chips under the terminals (`cybertron288/herdr-mods`) |
+| mod | upstream | here | what it does |
+|---|---|---|---|
+| `better-sidebar` | `munza/herdr-mods` 3.3.0 | 3.3.0 | sidebar lists + footer + panel toggle |
+| `better-tabs` | `munza/herdr-mods` 3.0.0 | 3.0.0 | tab bar with the Files/Changes/PRs/CI buttons |
+| `better-changes` | `munza/herdr-mods` 2.5.0 | 2.4.0 | changes panel and the pane header |
+| `better-files` | `munza/herdr-mods` 1.5.1 | 1.4.0 | files panel |
+| `branch-pr` | `munza/herdr-mods` 2.3.0 | 2.3.0 | pull-request panel |
+| `ci-dash` | `cybertron288/herdr-mods` | `34e7c33` | GitHub Actions panel |
+| `session-bar` | `cybertron288/herdr-mods` | `34e7c33` | 28px git chips under the terminals |
+
+To update a `munza` mod: copy `<name>/mods/<name>/` from upstream over
+`mods/<name>/`, then re-run `scripts/install.sh`. `better-changes` and
+`better-files` are behind; the run above is the one that has been checked.
 
 ### Patches
 
